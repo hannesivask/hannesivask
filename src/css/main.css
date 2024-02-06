@@ -1,0 +1,56 @@
+/* 
+0- 600px:    Phone
+600-900px:   Tablet portrait
+900-1200px:  Tablet landscape
+1200-1800:   Normal styles
+1800+:       Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right bottom, #659999, #f4791f);
+  background-size: 400% 400%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: gradient 15s ease;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  color: #ddd;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}/*# sourceMappingURL=main.css.map */
