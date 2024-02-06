@@ -11,6 +11,10 @@ html {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   color: var(--color-gray-light-1);
+
+  @include respond(phone) {
+    font-size: 50%;
+  }
 }
 
 body {

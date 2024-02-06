@@ -3,6 +3,10 @@
   grid-row: -2;
   margin-right: 5rem;
 
+  @include respond(tab-port) {
+    margin-right: 1rem;
+  }
+
   &__list {
     list-style: none;
   }

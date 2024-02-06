@@ -12,6 +12,14 @@
 
     transition: all 0.3s;
 
+    @include respond(phone) {
+      font-size: 7.6rem;
+    }
+
+    @include respond(tab-port) {
+      padding-left: 1rem;
+    }
+
     &:hover {
       transform: translateX(3rem);
       letter-spacing: 2;
