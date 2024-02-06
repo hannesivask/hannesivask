@@ -9,36 +9,12 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: var(--color-gray-light-1);
 }
 
 body {
-  background-image: linear-gradient(to right bottom, #659999, #f4791f);
+  background-image: var(--gradient-primary);
   background-size: 400% 400%;
-
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  animation: gradient 15s ease;
-}
-
-h1 {
-  font-family: sans-serif;
-  font-size: 4.8rem;
-  text-transform: uppercase;
-  color: #ddd;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  animation: gradient 15s ease infinite;
 }
