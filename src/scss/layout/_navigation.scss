@@ -9,6 +9,7 @@
 
   @include respond(phone) {
     margin-right: 0rem;
+    margin-bottom: 5rem;
   }
 
   &__list {
