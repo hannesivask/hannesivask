@@ -1,0 +1,14 @@
+.stack-box {
+  display: flex;
+  gap: 5rem;
+
+  margin-top: auto;
+
+  &__icon {
+    width: 7rem;
+    height: 7rem;
+
+    opacity: 60%;
+    color: var(--color-gray-light-3);
+  }
+}

@@ -1,0 +1,66 @@
+.project-box {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  gap: 3rem;
+
+  background-image: var(--gradient-primary-switched);
+  background-size: 200% 200%;
+
+  box-shadow: var(--box-shadow-tiny);
+
+  animation: gradient 15s ease infinite;
+  padding: 5rem;
+  border-radius: 1rem;
+
+  &:not(:last-child) {
+    margin-bottom: 15rem;
+  }
+
+  &__link {
+    width: 50%;
+    box-shadow: var(--box-shadow-small);
+
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: var(--box-shadow-medium);
+    }
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+}
+
+.info-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    margin-bottom: 3rem;
+  }
+}
+
+.icon-box {
+  display: flex;
+  gap: 1.5rem;
+
+  &__icon {
+    height: 3.4rem;
+    width: 3.4rem;
+    color: var(--color-gray-light-3);
+
+    &:hover {
+      color: var(--color-gray-light-1);
+      transform: translateY(0.1rem);
+    }
+  }
+}

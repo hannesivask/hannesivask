@@ -1,0 +1,23 @@
+.contact-box {
+  display: flex;
+  gap: 3rem;
+
+  &__link {
+    &:link,
+    &:visited {
+      color: inherit;
+    }
+  }
+
+  &__icon {
+    height: 3.8rem;
+    width: 3.8rem;
+    color: var(--color-gray-light-3);
+
+    transition: all 0.3s;
+
+    &:hover {
+      color: var(--color-gray-light-1);
+    }
+  }
+}
