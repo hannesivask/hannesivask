@@ -15,27 +15,146 @@
       rel="stylesheet"
     />
 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <link rel="stylesheet" href="src/css/main.css" />
 
     <title>Hannes Ivask</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <h1 class="header__title">Hannes Ivask</h1>
-      </header>
+    <header class="header">
+      <span class="heading-secondary">Hannes Ivask</span>
+      <!-- <h1 class="heading-primary">Hannes Ivask</h1> -->
 
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link">Projects</a>
+            <a href="#section-projects" class="nav__link">Projects</a>
           </li>
           <li class="nav__item">
-            <a href="about.html" class="nav__link">About</a>
+            <a href="#section-hero" class="nav__link">About</a>
           </li>
           <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
         </ul>
       </nav>
-    </div>
+    </header>
+
+    <section id="section-hero" class="section-hero u-margin-bottom-big">
+      <h2 class="heading-tertiary u-margin-bottom-small">
+        Hi, I'm Hannes Ivask!
+      </h2>
+      <p class="paragraph u-margin-bottom-small">
+        I am a Designer / Front End Developer based out of Estonia
+      </p>
+
+      <div class="contact-box u-margin-bottom-big">
+        <a
+          href="https://github.com/hannesivask/"
+          target="_blank"
+          class="contact-box__link"
+          ><ion-icon class="contact-box__icon" name="logo-github"></ion-icon
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/hannes-ivask/"
+          target="_blank"
+          class="contact-box__link"
+          ><ion-icon class="contact-box__icon" name="logo-linkedin"></ion-icon
+        ></a>
+        <a href="mailto:hannesegmond@gmail.com" class="contact-box__link"
+          ><ion-icon class="contact-box__icon" name="mail-outline"></ion-icon
+        ></a>
+      </div>
+
+      <div class="stack-box">
+        <ion-icon class="stack-box__icon" name="logo-javascript"></ion-icon>
+        <ion-icon class="stack-box__icon" name="logo-html5"></ion-icon>
+        <ion-icon class="stack-box__icon" name="logo-css3"></ion-icon>
+        <ion-icon class="stack-box__icon" name="logo-github"></ion-icon>
+        <ion-icon class="stack-box__icon" name="logo-figma"></ion-icon>
+      </div>
+    </section>
+
+    <section id="section-projects" class="section-projects u-margin-bottom-big">
+      <h1 class="heading-primary u-margin-bottom-medium">Projects</h1>
+
+      <div class="project-box">
+        <a href="#" class="project-box__link">
+          <img
+            src="https://www.zdnet.com/a/img/resize/be2ff593bc4230e12be7e407da72466eeea17323/2023/02/13/e170d464-3ee3-4d6d-bb96-d5559a54440e/figure-4-how-to-take-a-scrolling-screenshot-on-android-and-iphone.jpg?auto=webp&width=1280"
+            alt=""
+            class="project-box__image"
+          />
+        </a>
+        <div class="info-box">
+          <h3 class="info-box__title heading-tertiary">Project 1</h3>
+          <p class="info-box__text paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea soluta,
+            expedita, aliquid libero tempora fugiat repudiandae aut explicabo
+            debitis pariatur, sed maxime accusamus saepe consequuntur
+            perferendis maiores impedit vel voluptatibus!
+          </p>
+          <div class="icon-box">
+            <ion-icon class="icon-box__icon" name="logo-javascript"></ion-icon>
+            <ion-icon class="icon-box__icon" name="logo-html5"></ion-icon>
+            <ion-icon class="icon-box__icon" name="logo-css3"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-box u-flex-direction-switched">
+        <a href="#" class="project-box__link">
+          <img
+            src="https://www.zdnet.com/a/img/resize/be2ff593bc4230e12be7e407da72466eeea17323/2023/02/13/e170d464-3ee3-4d6d-bb96-d5559a54440e/figure-4-how-to-take-a-scrolling-screenshot-on-android-and-iphone.jpg?auto=webp&width=1280"
+            alt=""
+            class="project-box__image"
+          />
+        </a>
+        <div class="info-box">
+          <h3 class="info-box__title heading-tertiary">Project 2</h3>
+          <p class="info-box__text paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea soluta,
+            expedita, aliquid libero tempora fugiat repudiandae aut explicabo
+            debitis pariatur, sed maxime accusamus saepe consequuntur
+            perferendis maiores impedit vel voluptatibus!
+          </p>
+          <div class="icon-box">
+            <ion-icon class="icon-box__icon" name="logo-javascript"></ion-icon>
+            <ion-icon class="icon-box__icon" name="logo-html5"></ion-icon>
+            <ion-icon class="icon-box__icon" name="logo-css3"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h1 class="heading-secondary">Hannes Ivask</h1>
+      <div class="contact-box">
+        <a
+          href="https://github.com/hannesivask/"
+          target="_blank"
+          class="contact-box__link"
+          ><ion-icon class="contact-box__icon" name="logo-github"></ion-icon
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/hannes-ivask/"
+          target="_blank"
+          class="contact-box__link"
+          ><ion-icon class="contact-box__icon" name="logo-linkedin"></ion-icon
+        ></a>
+        <a href="mailto:hannesegmond@gmail.com" class="contact-box__link"
+          ><ion-icon class="contact-box__icon" name="mail-outline"></ion-icon
+        ></a>
+      </div>
+      <p class="paragraph footer__copyright">
+        Copyright &copy; by Hannes Ivask
+      </p>
+    </footer>
   </body>
 </html>

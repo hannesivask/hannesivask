@@ -1,17 +1,16 @@
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+.section-hero {
+  max-width: 120rem;
+  margin: 0 auto;
+  // height: 45vh;
 
-  margin: 5rem auto;
-  height: 90vh;
-  width: 90vw;
-  border: 2px dotted var(--color-gray-light-4);
-  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
 
-  @include respond(phone) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+  margin-top: 30rem;
+  align-items: center;
+}
+
+.section-projects {
+  max-width: 120rem;
+  margin: 0 auto;
 }
