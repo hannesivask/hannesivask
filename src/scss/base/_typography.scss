@@ -3,6 +3,10 @@
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  @include respond(phone) {
+    // font-size: 6.4rem;
+  }
 }
 
 .heading-secondary {

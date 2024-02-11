@@ -4,11 +4,21 @@
 
   margin-top: auto;
 
+  @include respond(phone) {
+    gap: 2rem;
+    padding: 5rem;
+  }
+
   &__icon {
     width: 7rem;
     height: 7rem;
 
     opacity: 60%;
     color: var(--color-gray-light-3);
+
+    @include respond(phone) {
+      width: 5rem;
+      height: 5rem;
+    }
   }
 }

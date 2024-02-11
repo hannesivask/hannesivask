@@ -12,8 +12,16 @@
 
 .u-margin-bottom-big {
   margin-bottom: 22rem !important;
+
+  @include respond(phone) {
+    margin-bottom: 10rem !important;
+  }
 }
 
 .u-flex-direction-switched {
   flex-direction: row-reverse !important;
+
+  @include respond(tab-port) {
+    flex-direction: column !important;
+  }
 }
