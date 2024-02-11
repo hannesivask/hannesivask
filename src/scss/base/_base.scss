@@ -11,6 +11,7 @@ html {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   color: var(--color-gray-light-1);
+  scroll-behavior: smooth;
 
   @include respond(phone) {
     font-size: 50%;
