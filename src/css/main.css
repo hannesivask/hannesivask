@@ -61,6 +61,48 @@ $breakpoint argument choices:
     background-position: 0% 50%;
   }
 }
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
 *,
 *::after,
 *::before {
@@ -209,14 +251,14 @@ body {
   box-shadow: var(--box-shadow-tiny);
   animation: gradient 15s ease infinite;
   padding: 5rem;
-  border-radius: -var(--border-radius-medium);
+  border-radius: var(--border-radius-medium);
 }
 .project-box:not(:last-child) {
   margin-bottom: 10rem;
 }
 .project-box__link {
   width: 50%;
-  box-shadow: var(--box-shadow-small);
+  box-shadow: var(--box-shadow-medium);
   overflow: hidden;
   opacity: 75%;
   transition: all 0.5s;
@@ -326,25 +368,38 @@ body {
 }
 
 .card {
-  background-color: var(--color-black);
-  border-radius: var(--border-radius-medium);
-  max-width: 75rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
   padding: 3rem;
+  max-width: 65rem;
+  background-image: var(--gradient-primary);
+  background-size: 300% 200%;
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--box-shadow-tiny);
 }
 .card__link {
   display: inline-block;
   width: 100%;
-  overflow: hidden;
+  height: 44rem;
+  margin-bottom: 3rem;
+  opacity: 75%;
   border-radius: var(--border-radius-medium);
+  box-shadow: var(--box-shadow-small);
+  overflow: hidden;
+  perspective: 10rem;
+  transition: all 0.3s;
+}
+.card__link:hover {
+  opacity: 90%;
+  box-shadow: var(--box-shadow-big);
+  transform: translateY(-0.1rem);
 }
 .card__image {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card .info-box {
   width: 100%;
