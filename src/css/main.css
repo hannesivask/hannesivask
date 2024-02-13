@@ -264,6 +264,11 @@ body {
 .info-box__link:hover {
   color: var(--color-gray-light-1);
 }
+@media only screen and (max-width: 37.5em) {
+  .info-box__link {
+    flex-direction: column;
+  }
+}
 .info-box__icon {
   height: 3.4rem;
   width: 3.4rem;
