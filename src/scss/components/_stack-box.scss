@@ -3,6 +3,8 @@
   gap: 5rem;
 
   margin-top: auto;
+  margin-bottom: 15rem;
+  justify-items: flex-end;
 
   @include respond(phone) {
     gap: 2rem;

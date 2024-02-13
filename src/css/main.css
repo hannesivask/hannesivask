@@ -97,12 +97,15 @@ body {
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 1px;
+  line-height: 1;
 }
+
 .heading-secondary {
   font-size: 4.8rem;
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+  line-height: 1;
 }
 
 .heading-tertiary {
@@ -110,6 +113,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+  line-height: 1;
 }
 
 .paragraph {
@@ -149,6 +153,7 @@ body {
 }
 
 .contact-box {
+  margin-top: 3rem;
   display: flex;
   gap: 3rem;
 }
@@ -169,6 +174,8 @@ body {
   display: flex;
   gap: 5rem;
   margin-top: auto;
+  margin-bottom: 15rem;
+  justify-items: flex-end;
 }
 @media only screen and (max-width: 37.5em) {
   .stack-box {
@@ -299,9 +306,9 @@ body {
 .header {
   display: flex;
   max-width: 120rem;
-  margin: 4rem auto 0 auto;
-  padding: 0 2rem;
-  align-items: baseline;
+  margin: 0 auto;
+  height: 10rem;
+  align-items: flex-end;
   justify-content: space-between;
 }
 @media only screen and (max-width: 37.5em) {
@@ -363,10 +370,17 @@ body {
 .section-hero {
   max-width: 120rem;
   margin: 0 auto;
+  height: 95vh;
   display: flex;
   flex-direction: column;
-  margin-top: 30rem;
   align-items: center;
+}
+.section-hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  gap: 3rem;
 }
 @media only screen and (max-width: 37.5em) {
   .section-hero {

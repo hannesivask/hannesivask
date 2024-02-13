@@ -3,10 +3,7 @@
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 1px;
-
-  @include respond(phone) {
-    // font-size: 6.4rem;
-  }
+  line-height: 1;
 }
 
 .heading-secondary {
@@ -14,6 +11,7 @@
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+  line-height: 1;
 }
 
 .heading-tertiary {
@@ -21,6 +19,7 @@
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+  line-height: 1;
 }
 
 .paragraph {

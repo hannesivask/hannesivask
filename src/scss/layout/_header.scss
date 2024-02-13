@@ -1,9 +1,9 @@
 .header {
   display: flex;
   max-width: 120rem;
-  margin: 4rem auto 0 auto;
-  padding: 0 2rem;
-  align-items: baseline;
+  margin: 0 auto;
+  height: 10rem;
+  align-items: flex-end;
   justify-content: space-between;
 
   @include respond(phone) {
