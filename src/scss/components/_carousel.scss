@@ -1,4 +1,92 @@
 .carousel {
-  display: flex;
-  justify-content: center;
+  width: 45rem;
+  height: 60rem;
+  margin: 0 auto;
+  position: relative;
+
+  box-shadow: var(--box-shadow-medium);
+
+  &__slides {
+    display: flex;
+
+    overflow-x: scroll;
+
+    scroll-snap-type: both mandatory;
+    scroll-behavior: smooth;
+
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: black;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    & > .card {
+      scroll-snap-align: center;
+      flex-shrink: 0;
+      height: 60rem;
+      margin-right: 5rem;
+      border-radius: 10px;
+      position: relative;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 75%);
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    &-link:link,
+    &-link:visited {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 3.5rem;
+      height: 3.5rem;
+      background-color: var(--color-gray-dark-3);
+
+      color: var(--color-gray-dark-2);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.6rem;
+      font-family: inherit;
+
+      border-radius: 50%;
+      position: relative;
+
+      transition: all 0.2s;
+    }
+
+    &-link:hover {
+      background-color: var(--color-gray-light-1);
+    }
+
+    &-link:active {
+      transform: translateY(-0.1rem);
+      background: var(--color-gray-light-2);
+    }
+  }
+}
+
+.card {
+  &:target .carousel__nav-link {
+    transform: scale(1.1);
+  }
 }
