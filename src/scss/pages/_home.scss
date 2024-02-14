@@ -15,6 +15,7 @@
   }
 
   @include respond(phone) {
+    height: 90vh;
     margin-top: 20rem;
     padding: 5rem;
     text-align: center;
@@ -34,4 +35,8 @@
 .section-components {
   max-width: 120rem;
   margin: 0 auto;
+
+  @include respond(phone) {
+    text-align: center;
+  }
 }
