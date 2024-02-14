@@ -363,10 +363,11 @@ body {
 }
 
 .carousel {
-  width: 45rem;
-  height: 60rem;
+  width: 40rem;
+  height: 50rem;
   margin: 0 auto;
   position: relative;
+  border-radius: var(--border-radius-medium);
   box-shadow: var(--box-shadow-medium);
 }
 .carousel__slides {
@@ -392,10 +393,11 @@ body {
 .carousel__slides > .card {
   scroll-snap-align: center;
   flex-shrink: 0;
-  height: 60rem;
-  margin-right: 5rem;
+  height: 50rem;
+  margin-right: 3rem;
   border-radius: 10px;
   position: relative;
+  box-shadow: none;
 }
 .carousel__nav {
   position: absolute;
@@ -440,7 +442,7 @@ body {
   flex-direction: column;
   gap: 1.4rem;
   padding: 2rem;
-  width: 45rem;
+  width: 40rem;
   background-image: var(--gradient-primary);
   background-size: 300% 200%;
   border-radius: var(--border-radius-medium);
