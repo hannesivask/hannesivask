@@ -278,8 +278,7 @@ body {
   width: 100%;
   border-radius: 0.5rem;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media only screen and (max-width: 56.25em) {
   .project-box {
@@ -468,8 +467,7 @@ body {
 .card__image {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .card .info-box {
   display: flex;
@@ -515,8 +513,7 @@ body {
   justify-content: center;
   gap: 5rem;
   background-image: var(--gradient-primary);
-  -webkit-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0) 10%);
-          mask: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0) 10%);
+  mask: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0) 10%);
   background-size: 300% 300%;
 }
 .footer__copyright {
@@ -598,4 +595,6 @@ body {
   .section-components {
     text-align: center;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
